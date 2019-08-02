@@ -2,14 +2,15 @@
 title: Syllabus
 slug: syllabus
 citeproc: false
-bibliography: ../static/bib/references.bib
-csl: ../static/bib/chicago-syllabus-no-bib.csl
+bibliography: ../static/bib/music_and_the_brain.bib
+#csl: ../static/bib/chicago-syllabus-no-bib.csl
+link-citations: true
 ---
 
 <style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode { white-space: pre; position: relative; }
 div.sourceCode { margin: 1em 0; }
@@ -19,14 +20,16 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(title);
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
+    border: none; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -38,7 +41,7 @@ pre.numberSource { margin-left: 3em; border-left: 1px solid #a0a0a0;  padding-le
 div.sourceCode
   { color: #1f1c1b; background-color: #ffffff; }
 @media screen {
-a.sourceLine::before { text-decoration: underline; }
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span. { color: #1f1c1b; } /* Normal */
 code span.al { color: #bf0303; background-color: #f7e6e6; font-weight: bold; } /* Alert */
@@ -78,7 +81,130 @@ code span.wa { color: #bf0303; } /* Warning */
 {{% courseinfo %}}<br />
 <br />
 </span></span></p>
-<h2 id="course-objectives">Course objectives</h2>
+<blockquote>
+<p>Music is by no means like the other arts, [it is] a copy of the will itself. For this reason the effect of music is so very much more powerful and penetrating than is that of the other arts, for these others speak only of the shadow, but music of the essence.
+— Schopenhauer, The World as Will and Representation</p>
+</blockquote>
+<h2 id="overview">Overview</h2>
+<p>What is music and how do we experience it?</p>
+<p>This course uses music as a unifying theme to explore fundamental concepts and open questions in acoustics, audi- tory neuroscience, and psychology. We will approach music as both musicians and as neuroscientists, attempting to bridge the two by taking four perspectives:</p>
+<h3 id="sound-what-is-the-physical-basis-of-music">Sound: What is the physical basis of music?</h3>
+<p>We begin by describing music from the “outside in,” as an acoustic phenomenon derived from basic properties of gases through its structuring into the basic elements of music – harmonics, tonality, and rhythm.</p>
+<h3 id="audition-how-is-music-sensed">Audition: How is music sensed?</h3>
+<p>We then take the complementary view, considering music from the “inside out,” exploring the neural systems that capture, transform, and represent sound.</p>
+<h3 id="acoustics-how-do-we-make-music-for-the-brain">Acoustics: How do we make music for the brain?</h3>
+<p>We consider the ways the auditory system reflects itself in the instruments we use, how we produce music, and the music we listen to.</p>
+<h3 id="hearing-how-does-music-affect-us">Hearing: How does music affect us?</h3>
+<p>We finish with the way we are shaped by music through development, theories about how the auditory system com- putes higher-order musical features, how music can heal us, and how music can become a pathology.</p>
+<h2 id="schedule">Schedule</h2>
+<table>
+<colgroup>
+<col width="27%" />
+<col width="25%" />
+<col width="27%" />
+<col width="20%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Topic</th>
+<th>Pre-Reading</th>
+<th>Post-Reading</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sound</td>
+<td>Evolving Hearing</td>
+<td><span class="citation">Trainor (<a href="#ref-trainorOriginsMusicAuditory2015b" role="doc-biblioref">2015</a>)</span></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Sound</td>
+<td>Sound Waves</td>
+<td><span class="citation">Feynman (<a href="#ref-feynmanFeynmanLecturesPhysics1963" role="doc-biblioref">1963</a><a href="#ref-feynmanFeynmanLecturesPhysics1963" role="doc-biblioref">a</a>)</span></td>
+<td><span class="citation">Pulkki (<a href="#ref-pulkkiCommunicationAcousticsChapter2015" role="doc-biblioref">2015</a>)</span></td>
+</tr>
+<tr class="odd">
+<td>Sound</td>
+<td>Tonality &amp; Harmonics</td>
+<td><span class="citation">Feynman (<a href="#ref-feynmanFeynmanLecturesPhysics1963a" role="doc-biblioref">1963</a><a href="#ref-feynmanFeynmanLecturesPhysics1963a" role="doc-biblioref">b</a>)</span></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Sound</td>
+<td>Rhythm</td>
+<td><span class="citation">Iyer et al. (<a href="#ref-iyerNovelRepresentationRhythmic1997" role="doc-biblioref">1997</a>)</span></td>
+<td><span class="citation">Gámez et al. (<a href="#ref-gamezAmplitudePeriodicNeural2019" role="doc-biblioref">2019</a>)</span></td>
+</tr>
+<tr class="odd">
+<td>Audition</td>
+<td>The Ear &amp; Pitch</td>
+<td><span class="citation">Ekdale (<a href="#ref-ekdaleFormFunctionMammalian2016" role="doc-biblioref">2016</a>)</span></td>
+<td><span class="citation">Laudanski, Zheng, and Brette (<a href="#ref-laudanskiStructuralTheoryPitch2014a" role="doc-biblioref">2014</a>)</span></td>
+</tr>
+<tr class="even">
+<td>Audition</td>
+<td>Subcortical Auditory System</td>
+<td><span class="citation">Winer et al. (<a href="#ref-winerAuditoryThalamocorticalTransformation2005b" role="doc-biblioref">2005</a>)</span></td>
+<td><span class="citation">Bartlett (<a href="#ref-bartlettOrganizationPhysiologyAuditory2013a" role="doc-biblioref">2013</a>)</span></td>
+</tr>
+<tr class="odd">
+<td>Audition</td>
+<td>Auditory Cortex</td>
+<td><span class="citation">Wang (<a href="#ref-Wang2013a" role="doc-biblioref">2013</a>)</span></td>
+<td><span class="citation">Zatorre, Chen, and Penhune (<a href="#ref-zatorreWhenBrainPlays2007a" role="doc-biblioref">2007</a>)</span></td>
+</tr>
+<tr class="even">
+<td>Acoustics</td>
+<td>Instruments &amp; Synthesis</td>
+<td></td>
+<td><span class="citation">Bissinger (<a href="#ref-bissingerStructuralAcousticsGood2008" role="doc-biblioref">2008</a>)</span></td>
+</tr>
+<tr class="odd">
+<td>Acoustics</td>
+<td>Grouping</td>
+<td><span class="citation">Bendixen et al. (<a href="#ref-bendixenRegularityExtractionNonAdjacent2012a" role="doc-biblioref">2012</a>)</span></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Acoustics</td>
+<td>Speech &amp; Hip-Hop</td>
+<td><span class="citation">Hickok and Poeppel (<a href="#ref-hickokCorticalOrganizationSpeech2007a" role="doc-biblioref">2007</a>)</span></td>
+<td><span class="citation">Liu et al. (<a href="#ref-liuNeuralCorrelatesLyrical2012" role="doc-biblioref">2012</a>)</span></td>
+</tr>
+<tr class="odd">
+<td>Acoustics</td>
+<td>Psychoacoustics</td>
+<td><span class="citation">Mustonen (<a href="#ref-mustonenReviewbasedConceptualAnalysis2008" role="doc-biblioref">2008</a>)</span></td>
+<td><span class="citation">Davies et al. (<a href="#ref-daviesPerceptionSoundscapesInterdisciplinary2013" role="doc-biblioref">2013</a>)</span></td>
+</tr>
+<tr class="even">
+<td>Hearing</td>
+<td>Auditory Development</td>
+<td><span class="citation">Moore and Linthicum (<a href="#ref-mooreHumanAuditorySystem2009" role="doc-biblioref">2009</a>)</span></td>
+<td><span class="citation">Keuroghlian and Knudsen (<a href="#ref-keuroghlianAdaptiveAuditoryPlasticity2007" role="doc-biblioref">2007</a>)</span></td>
+</tr>
+<tr class="odd">
+<td>Hearing</td>
+<td>Auditory Models</td>
+<td><span class="citation">Bizley and Cohen (<a href="#ref-bizleyWhatWhereHow2013a" role="doc-biblioref">2013</a>)</span></td>
+<td><span class="citation">Denham and Winkler (<a href="#ref-denhamPredictiveCodingAuditory2018" role="doc-biblioref">2018</a>)</span></td>
+</tr>
+<tr class="even">
+<td>Hearing</td>
+<td>Music &amp; Emotion</td>
+<td><span class="citation">Koelsch (<a href="#ref-koelschBrainCorrelatesMusicevoked2014" role="doc-biblioref">2014</a>)</span></td>
+<td><span class="citation">Frühholz, Trost, and Kotz (<a href="#ref-fruhholzSoundEmotionsUnifying2016" role="doc-biblioref">2016</a>)</span></td>
+</tr>
+<tr class="odd">
+<td>Hearing</td>
+<td>Auditory Pathology</td>
+<td><span class="citation">Kamioka et al. (<a href="#ref-kamiokaEffectivenessMusicTherapy2014" role="doc-biblioref">2014</a>)</span></td>
+<td><span class="citation">Stewart et al. (<a href="#ref-stewartMusicBrainDisorders2006" role="doc-biblioref">2006</a>)</span></td>
+</tr>
+</tbody>
+</table>
 <p><span class="newthought">By the end of this course,</span> you will (1) be data literate and (2) be able to answer your own questions with statistical and data scientific tools.</p>
 <p>Specifically, you’ll be able to:</p>
 <ul>
@@ -105,10 +231,10 @@ code span.wa { color: #bf0303; } /* Warning */
 f(x) = \dfrac{1}{\sqrt{2\pi}} e^{-\frac12 x^2}
 \]</span></p>
 <p>And way more of this:</p>
-<pre class="sourceCode r"><code class="sourceCode r">summary_monthly_temp &lt;-<span class="st"> </span>weather <span class="op">%&gt;%</span><span class="st"> </span>
-<span class="st">  </span><span class="kw">group_by</span>(month) <span class="op">%&gt;%</span><span class="st"> </span>
-<span class="st">  </span><span class="kw">summarize</span>(<span class="dt">mean =</span> <span class="kw">mean</span>(temp), 
-            <span class="dt">std_dev =</span> <span class="kw">sd</span>(temp))</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a>summary_monthly_temp &lt;-<span class="st"> </span>weather <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="st">  </span><span class="kw">group_by</span>(month) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="st">  </span><span class="kw">summarize</span>(<span class="dt">mean =</span> <span class="kw">mean</span>(temp), </span>
+<span id="cb1-4"><a href="#cb1-4"></a>            <span class="dt">std_dev =</span> <span class="kw">sd</span>(temp))</span></code></pre></div>
 <p>Over the last decade there has been a revolution in statistical and scientific computing. Open source languages like R and Python have overtaken older (and expensive!) corporate software packages like SAS and SPSS, and there are now thousands of books and blog posts and other online resources with excellent tutorials about how to analyze pretty much any kind of data.</p>
 <p>This class will expose you to <a href="https://cran.r-project.org/">R</a>—one of the most popular, sought-after, and in-demand statistical programming languages. Armed with the foundation of R skills you’ll learn in this class, you’ll know enough to be able to find how to analyze any sort of data-based question in the future.</p>
 <h2 id="course-materials">Course materials</h2>
@@ -282,3 +408,83 @@ f(x) = \dfrac{1}{\sqrt{2\pi}} e^{-\frac12 x^2}
 <img src="https://media.giphy.com/media/r7Nbr97FsXxXG/giphy.gif" alt="Hungry red panda" /><br />
 <br />
 </span></span> <span class="newthought">Once you have read</span> this entire syllabus and <a href="/assignments/">the assignments page</a>, please <a href="mailto:andrew_heiss@byu.edu">click here</a> and e-mail me a picture of a red panda. For real. Brownie points if it’s animated.</p>
+<div id="refs" class="references">
+<div id="ref-bartlettOrganizationPhysiologyAuditory2013a">
+<p>Bartlett, Edward L. 2013. “The Organization and Physiology of the Auditory Thalamus and Its Role in Processing Acoustic Features Important for Speech Perception.” <em>Brain and Language</em> 126 (1): 29–48. <a href="https://doi.org/10.1016/j.bandl.2013.03.003">https://doi.org/10.1016/j.bandl.2013.03.003</a>.</p>
+</div>
+<div id="ref-bendixenRegularityExtractionNonAdjacent2012a">
+<p>Bendixen, Alexandra, Erich Schröger, Walter Ritter, and István Winkler. 2012. “Regularity Extraction from Non-Adjacent Sounds.” <em>Frontiers in Psychology</em> 3. <a href="https://doi.org/10.3389/fpsyg.2012.00143">https://doi.org/10.3389/fpsyg.2012.00143</a>.</p>
+</div>
+<div id="ref-bissingerStructuralAcousticsGood2008">
+<p>Bissinger, George. 2008. “Structural Acoustics of Good and Bad Violins.” <em>The Journal of the Acoustical Society of America</em> 124 (3): 1764–73. <a href="https://doi.org/10.1121/1.2956478">https://doi.org/10.1121/1.2956478</a>.</p>
+</div>
+<div id="ref-bizleyWhatWhereHow2013a">
+<p>Bizley, Jennifer K., and Yale E. Cohen. 2013. “The What, Where and How of Auditory-Object Perception.” <em>Nature Reviews Neuroscience</em> 14 (10): 693–707. <a href="https://doi.org/10.1038/nrn3565">https://doi.org/10.1038/nrn3565</a>.</p>
+</div>
+<div id="ref-daviesPerceptionSoundscapesInterdisciplinary2013">
+<p>Davies, William J., Mags D. Adams, Neil S. Bruce, Rebecca Cain, Angus Carlyle, Peter Cusack, Deborah A. Hall, et al. 2013. “Perception of Soundscapes: An Interdisciplinary Approach.” <em>Applied Acoustics</em>, Applied Soundscapes: Recent Advances in Soundscape Research, 74 (2): 224–31. <a href="https://doi.org/10.1016/j.apacoust.2012.05.010">https://doi.org/10.1016/j.apacoust.2012.05.010</a>.</p>
+</div>
+<div id="ref-denhamPredictiveCodingAuditory2018">
+<p>Denham, Susan L., and István Winkler. 2018. “Predictive Coding in Auditory Perception: Challenges and Unresolved Questions.” <em>European Journal of Neuroscience</em>. <a href="https://doi.org/10.1111/ejn.13802">https://doi.org/10.1111/ejn.13802</a>.</p>
+</div>
+<div id="ref-ekdaleFormFunctionMammalian2016">
+<p>Ekdale, Eric G. 2016. “Form and Function of the Mammalian Inner Ear.” <em>Journal of Anatomy</em> 228 (2): 324–37. <a href="https://doi.org/10.1111/joa.12308">https://doi.org/10.1111/joa.12308</a>.</p>
+</div>
+<div id="ref-feynmanFeynmanLecturesPhysics1963">
+<p>Feynman, Richard. 1963a. “The Feynman Lectures on Physics Vol. I Ch. 47: Sound. The Wave Equation.” <a href="http://www.feynmanlectures.caltech.edu/I_47.html">http://www.feynmanlectures.caltech.edu/I_47.html</a>.</p>
+</div>
+<div id="ref-feynmanFeynmanLecturesPhysics1963a">
+<p>———. 1963b. “The Feynman Lectures on Physics Vol. I Ch. 49: Modes.” <a href="http://www.feynmanlectures.caltech.edu/I_49.html">http://www.feynmanlectures.caltech.edu/I_49.html</a>.</p>
+</div>
+<div id="ref-fruhholzSoundEmotionsUnifying2016">
+<p>Frühholz, Sascha, Wiebke Trost, and Sonja A. Kotz. 2016. “The Sound of EmotionsTowards a Unifying Neural Network Perspective of Affective Sound Processing.” <em>Neuroscience &amp; Biobehavioral Reviews</em> 68 (September): 96–110. <a href="https://doi.org/10.1016/j.neubiorev.2016.05.002">https://doi.org/10.1016/j.neubiorev.2016.05.002</a>.</p>
+</div>
+<div id="ref-gamezAmplitudePeriodicNeural2019">
+<p>Gámez, Jorge, Germán Mendoza, Luis Prado, Abraham Betancourt, and Hugo Merchant. 2019. “The Amplitude in Periodic Neural State Trajectories Underlies the Tempo of Rhythmic Tapping.” <em>PLOS Biology</em> 17 (4): e3000054. <a href="https://doi.org/10.1371/journal.pbio.3000054">https://doi.org/10.1371/journal.pbio.3000054</a>.</p>
+</div>
+<div id="ref-hickokCorticalOrganizationSpeech2007a">
+<p>Hickok, Gregory, and David Poeppel. 2007. “The Cortical Organization of Speech Processing.” <em>Nature Reviews Neuroscience</em> 8 (5): 393–402. <a href="https://doi.org/10.1038/nrn2113">https://doi.org/10.1038/nrn2113</a>.</p>
+</div>
+<div id="ref-iyerNovelRepresentationRhythmic1997">
+<p>Iyer, Vijay, Jeff Bilmes, Matt Wright, and David Wessel. 1997. “A Novel Representation for Rhythmic Structure.” <em>Proceedings of the 23rd International Computer Music Conference</em>, 97–100. <a href="http://melodi.ee.washington.edu/~bilmes/mypubs/iyer1997-rhythm.pdf">http://melodi.ee.washington.edu/~bilmes/mypubs/iyer1997-rhythm.pdf</a>.</p>
+</div>
+<div id="ref-kamiokaEffectivenessMusicTherapy2014">
+<p>Kamioka, Hiroharu, Kiichiro Tsutani, Minoru Yamada, Hyuntae Park, Hiroyasu Okuizumi, Koki Tsuruoka, Takuya Honda, et al. 2014. “Effectiveness of Music Therapy: A Summary of Systematic Reviews Based on Randomized Controlled Trials of Music Interventions.” <em>Patient Preference and Adherence</em> 8: 727–54. <a href="https://doi.org/10.2147/PPA.S61340">https://doi.org/10.2147/PPA.S61340</a>.</p>
+</div>
+<div id="ref-keuroghlianAdaptiveAuditoryPlasticity2007">
+<p>Keuroghlian, Alex S., and Eric I. Knudsen. 2007. “Adaptive Auditory Plasticity in Developing and Adult Animals.” <em>Progress in Neurobiology</em> 82 (3): 109–21. <a href="https://doi.org/10.1016/j.pneurobio.2007.03.005">https://doi.org/10.1016/j.pneurobio.2007.03.005</a>.</p>
+</div>
+<div id="ref-koelschBrainCorrelatesMusicevoked2014">
+<p>Koelsch, Stefan. 2014. “Brain Correlates of Music-Evoked Emotions.” <em>Nature Reviews Neuroscience</em> 15 (3): 170–80. <a href="https://doi.org/10.1038/nrn3666">https://doi.org/10.1038/nrn3666</a>.</p>
+</div>
+<div id="ref-laudanskiStructuralTheoryPitch2014a">
+<p>Laudanski, J., Y. Zheng, and R. Brette. 2014. “A Structural Theory of Pitch.” <em>eNeuro</em> 1 (1): ENEURO.0033–14.2014. <a href="https://doi.org/10.1523/ENEURO.0033-14.2014">https://doi.org/10.1523/ENEURO.0033-14.2014</a>.</p>
+</div>
+<div id="ref-liuNeuralCorrelatesLyrical2012">
+<p>Liu, Siyuan, Ho Ming Chow, Yisheng Xu, Michael G. Erkkinen, Katherine E. Swett, Michael W. Eagle, Daniel A. Rizik-Baer, and Allen R. Braun. 2012. “Neural Correlates of Lyrical Improvisation: An fMRI Study of Freestyle Rap.” <em>Scientific Reports</em> 2 (November): 834. <a href="https://doi.org/10.1038/srep00834">https://doi.org/10.1038/srep00834</a>.</p>
+</div>
+<div id="ref-mooreHumanAuditorySystem2009">
+<p>Moore, Jean K., and Fred H. Linthicum. 2009. “The Human Auditory System: A Timeline of Development.” <em>International Journal of Audiology</em> 46 (9). <a href="https://doi.org/https://doi.org/10.1080/14992020701383019">https://doi.org/https://doi.org/10.1080/14992020701383019</a>.</p>
+</div>
+<div id="ref-mustonenReviewbasedConceptualAnalysis2008">
+<p>Mustonen, Manne-Sakari. 2008. “A Review-Based Conceptual Analysis of Auditory Signs and Their Design,” June. <a href="https://smartech.gatech.edu/handle/1853/49882">https://smartech.gatech.edu/handle/1853/49882</a>.</p>
+</div>
+<div id="ref-pulkkiCommunicationAcousticsChapter2015">
+<p>Pulkki, Ville. 2015. “Communication Acoustics, Chapter 2: Physics of Sound.” In <em>Wiley.Com</em>, 15–42. <a href="https://www.wiley.com/en-us/Communication+Acoustics\%3A+An+Introduction+to+Speech\%2C+Audio+and+Psychoacoustics-p-9781118866542">https://www.wiley.com/en-us/Communication+Acoustics\%3A+An+Introduction+to+Speech\%2C+Audio+and+Psychoacoustics-p-9781118866542</a>.</p>
+</div>
+<div id="ref-stewartMusicBrainDisorders2006">
+<p>Stewart, Lauren, Katharina von Kriegstein, Jason D. Warren, and Timothy D. Griffiths. 2006. “Music and the Brain: Disorders of Musical Listening.” <em>Brain</em> 129 (10): 2533–53. <a href="https://doi.org/10.1093/brain/awl171">https://doi.org/10.1093/brain/awl171</a>.</p>
+</div>
+<div id="ref-trainorOriginsMusicAuditory2015b">
+<p>Trainor, L. J. 2015. “The Origins of Music in Auditory Scene Analysis and the Roles of Evolution and Culture in Musical Creation.” <em>Philosophical Transactions of the Royal Society B: Biological Sciences</em> 370 (1664): 20140089–9. <a href="https://doi.org/10.1098/rstb.2014.0089">https://doi.org/10.1098/rstb.2014.0089</a>.</p>
+</div>
+<div id="ref-Wang2013a">
+<p>Wang, Xiaoqin. 2013. “The Harmonic Organization of Auditory Cortex.” <em>Frontiers in Systems Neuroscience</em> 7 (December): 114. <a href="https://doi.org/10.3389/fnsys.2013.00114">https://doi.org/10.3389/fnsys.2013.00114</a>.</p>
+</div>
+<div id="ref-winerAuditoryThalamocorticalTransformation2005b">
+<p>Winer, Jeffery A., Lee M. Miller, Charles C. Lee, and Christoph E. Schreiner. 2005. “Auditory Thalamocortical Transformation: Structure and Function.” <em>Trends in Neurosciences</em> 28 (5): 255–63. <a href="https://doi.org/10.1016/j.tins.2005.03.009">https://doi.org/10.1016/j.tins.2005.03.009</a>.</p>
+</div>
+<div id="ref-zatorreWhenBrainPlays2007a">
+<p>Zatorre, Robert J., Joyce L. Chen, and Virginia B. Penhune. 2007. “When the Brain Plays Music: AuditoryMotor Interactions in Music Perception and Production.” <em>Nature Reviews Neuroscience</em> 8 (7): 547–58. <a href="https://doi.org/10.1038/nrn2152">https://doi.org/10.1038/nrn2152</a>.</p>
+</div>
+</div>

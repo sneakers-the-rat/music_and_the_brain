@@ -17,3 +17,12 @@ To get the theme later, use this command:
 To update to the latest version of the theme, use:
 
     git submodule update --recursive --remote
+
+# Additional dependencies
+
+```
+brew install pandoc-citeproc
+brew install jez/formulae/pandoc-sidenote
+
+install.packages(c("moderndive", "skimr"))
+```

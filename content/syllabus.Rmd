@@ -2,8 +2,9 @@
 title: Syllabus
 slug: syllabus
 citeproc: false
-bibliography: ../static/bib/references.bib
-csl: ../static/bib/chicago-syllabus-no-bib.csl
+bibliography: ../static/bib/music_and_the_brain.bib
+#csl: ../static/bib/chicago-syllabus-no-bib.csl
+link-citations: true
 ---
 
 ```{r load-libraries, message=FALSE, warning=FALSE, include=FALSE}
@@ -17,7 +18,51 @@ library(pander)
 [^courseinfo]: {-}
   `r blogdown::shortcode("courseinfo")`
 
-# Course objectives
+> Music is by no means like the other arts, [it is] a copy of the will itself. For this reason the effect of music is so very much more powerful and penetrating than is that of the other arts, for these others speak only of the shadow, but music of the essence.
+> — Schopenhauer, The World as Will and Representation
+
+# Overview
+
+What is music and how do we experience it?
+
+This course uses music as a unifying theme to explore fundamental concepts and open questions in acoustics, audi- tory neuroscience, and psychology. We will approach music as both musicians and as neuroscientists, attempting to bridge the two by taking four perspectives:
+
+## Sound: What is the physical basis of music?
+
+We begin by describing music from the “outside in,” as an acoustic phenomenon derived from basic properties of gases through its structuring into the basic elements of music – harmonics, tonality, and rhythm.
+
+## Audition: How is music sensed?
+
+We then take the complementary view, considering music from the “inside out,” exploring the neural systems that capture, transform, and represent sound.
+
+## Acoustics: How do we make music for the brain?
+
+We consider the ways the auditory system reflects itself in the instruments we use, how we produce music, and the music we listen to.
+
+## Hearing: How does music affect us?
+
+We finish with the way we are shaped by music through development, theories about how the auditory system com- putes higher-order musical features, how music can heal us, and how music can become a pathology.
+
+# Schedule
+
+|| Topic | Pre-Reading | Post-Reading | 
+| ----------- | ---------- | ----------- | -------- |
+| Sound |  Evolving Hearing | @trainorOriginsMusicAuditory2015b | | @fitchBiologyEvolutionMusic2006a
+| Sound |  Sound Waves | @feynmanFeynmanLecturesPhysics1963 |  @pulkkiCommunicationAcousticsChapter2015 |
+| Sound |  Tonality & Harmonics | @feynmanFeynmanLecturesPhysics1963a | |
+| Sound |  Rhythm | @iyerNovelRepresentationRhythmic1997 | @gamezAmplitudePeriodicNeural2019  |
+| Audition |  The Ear & Pitch |  @ekdaleFormFunctionMammalian2016 | @laudanskiStructuralTheoryPitch2014a |
+| Audition |  Subcortical Auditory System | @winerAuditoryThalamocorticalTransformation2005b | @bartlettOrganizationPhysiologyAuditory2013a |
+| Audition |  Auditory Cortex | @Wang2013a  |  @zatorreWhenBrainPlays2007a |
+| Acoustics |  Instruments & Synthesis | |  @bissingerStructuralAcousticsGood2008 |
+| Acoustics |  Grouping | @bendixenRegularityExtractionNonAdjacent2012a | |
+| Acoustics |  Speech & Hip-Hop | @hickokCorticalOrganizationSpeech2007a | @liuNeuralCorrelatesLyrical2012 |
+| Acoustics |  Psychoacoustics | @mustonenReviewbasedConceptualAnalysis2008 | @daviesPerceptionSoundscapesInterdisciplinary2013 |
+| Hearing |  Auditory Development | @mooreHumanAuditorySystem2009 | @keuroghlianAdaptiveAuditoryPlasticity2007 |
+| Hearing |  Auditory Models | @bizleyWhatWhereHow2013a | @denhamPredictiveCodingAuditory2018 |
+| Hearing |  Music & Emotion | @koelschBrainCorrelatesMusicevoked2014 | @fruhholzSoundEmotionsUnifying2016 |
+| Hearing |  Auditory Pathology | @kamiokaEffectivenessMusicTherapy2014 | @stewartMusicBrainDisorders2006 |
+
 
 <span class="newthought">By the end of this course,</span> you will (1) be data literate and (2) be able to answer your own questions with statistical and data scientific tools.
 

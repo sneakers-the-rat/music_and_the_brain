@@ -9,7 +9,7 @@ clean:
 	rm -rf public/
 
 build:
-	Rscript -e "blogdown::build_site()"
+	Rscript -e "blogdown::build_site(method='html')"
 
 serve: build
 	Rscript -e "blogdown::serve_site(port=4321)"
